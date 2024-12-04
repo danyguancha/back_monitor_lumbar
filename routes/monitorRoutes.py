@@ -6,7 +6,6 @@ from sqlalchemy.orm import Session
 from controllers.monitorController import create_sensor_data, get_last_sensor_data
 from controllers.userController import validate_token
 from controllers.emailController import send_posture_recommendation_email
-from datetime import datetime, timedelta
 
 
 router = APIRouter()

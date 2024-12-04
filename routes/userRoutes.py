@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, Request, status
 from schemas.user import  UserLogin, UserCreate
 from config.db import get_db
 from sqlalchemy.orm import Session
-from controllers.emailController import send_posture_recommendation_email, send_welcome_email
+from controllers.emailController import send_welcome_email
 from controllers.userController import create_user, validate_token, email_validation, validate_password, password_context, exist_user, exist_token
 
 router = APIRouter()
