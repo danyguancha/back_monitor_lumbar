@@ -8,7 +8,7 @@ from schemas.user import User
 from starlette.responses import JSONResponse
 from typing import Optional
 
-locale.setlocale(locale.LC_TIME, 'es_ES')
+locale.setlocale(locale.LC_TIME, 'es.UTF-8')
 load_dotenv('.env')
 
 smtp_password = os.getenv("SMTP_PASSWORD")
