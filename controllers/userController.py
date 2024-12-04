@@ -10,8 +10,8 @@ from fastapi import HTTPException, status, Header
 load_dotenv(".env")
 
 import jwt
-from jwt import  ExpiredSignatureError, InvalidTokenError
-from functools import wraps
+#from jwt import  ExpiredSignatureError, InvalidTokenError
+from jwt.exceptions import ExpiredSignatureError, InvalidTokenError
 
 password_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
