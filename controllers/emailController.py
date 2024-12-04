@@ -1,5 +1,5 @@
 import os
-import locale
+#import locale
 from models.tables import *
 from dotenv import load_dotenv
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
@@ -8,7 +8,7 @@ from schemas.user import User
 from starlette.responses import JSONResponse
 from typing import Optional
 
-locale.setlocale(locale.LC_TIME, 'es.UTF-8')
+#locale.setlocale(locale.LC_TIME, 'es_ES')
 load_dotenv('.env')
 
 smtp_password = os.getenv("SMTP_PASSWORD")
